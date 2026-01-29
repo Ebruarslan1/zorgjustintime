@@ -48,10 +48,17 @@ export default function ContactPage() {
       <main className="flex-1 py-12 sm:py-16">
         <div className="max-w-2xl mx-auto px-6">
           <div className="mb-10">
-            <h1 className="text-3xl font-bold text-zorg-green mb-2">Contact</h1>
-            <p className="text-zorg-green-dark/80 leading-relaxed">
-              Vul het formulier in. We reageren zo snel mogelijk.
+            <h1 className="text-3xl font-bold text-zorg-green mb-2">Neem contact op</h1>
+            <p className="text-zorg-green-dark/80 leading-relaxed mb-6">
+              Stel uw vraag via het formulier – ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
             </p>
+            <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-4 text-sm text-zorg-green-dark/90">
+              <p className="font-semibold text-zorg-green mb-2">Contactgegevens</p>
+              <p><a href="mailto:zorgjustintime@gmail.com" className="hover:text-zorg-green transition-colors underline">zorgjustintime@gmail.com</a></p>
+              <p className="mt-1"><a href="tel:+31614840145" className="hover:text-zorg-green transition-colors underline">06 14 84 01 45</a></p>
+              <p className="mt-1">Almelo</p>
+              <p className="mt-1 text-zorg-green-dark/70">KVK 87265931 · Vestiging 000053185749</p>
+            </div>
           </div>
 
           <div className="rounded-2xl border border-zorg-green/20 bg-white shadow-lg p-6 sm:p-8">

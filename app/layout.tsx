@@ -9,8 +9,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Zorg Just In Time | Justin Smits – ZZP in de zorg',
-  description: 'Zorg Just In Time – Persoonlijke zorgbemiddeling en ondersteuning. Justin Smits, ZZPer in de zorg. Neem contact op als zorgvrager of zorgbemiddelaar.',
+  title: 'Zorg Just In Time | Justin Smits – Zorgbemiddeling PGB',
+  description: 'Zorg Just In Time – Zorgbemiddeling met ervaring in verslavingszorg, jongeren en psychisch zware problematiek. Justin Smits, MBO maatschappelijke zorg. Focus op PGB. Open voor leidende functies. Neem gerust contact op.',
 }
 
 export default function RootLayout({
