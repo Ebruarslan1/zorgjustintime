@@ -19,7 +19,7 @@ export default function Home() {
               Zorg die past, wanneer het nodig is
             </h1>
             <p className="mt-6 text-lg text-white/90 max-w-xl leading-relaxed">
-              Welkom. Ik werk in de zorg en kom soms via zorgbemiddeling bij instellingen terecht. Graag maak ik kennis – of u nu een vraag heeft over ondersteuning, samenwerking of een leidende rol.
+              Welkom. Graag maak ik kennis. Heeft u een vraag over ondersteuning, samenwerking of een leidende rol in de zorg? Ik hoor het graag van u.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -45,7 +45,7 @@ export default function Home() {
               Mijn werk
             </h2>
             <p className="text-zorg-green-dark/80 max-w-2xl mb-10 leading-relaxed">
-              Ik werk in de zorg en kom regelmatig via zorgbemiddeling bij instellingen terecht. Daar doe ik ondersteuning en begeleiding – in situaties waar mensen met een eigen budget voor zorg en ondersteuning de juiste hulp zoeken. Ik werk graag samen met teams en sta open voor een leidende rol waar dat past.
+              Ik kom via zorgbemiddeling bij instellingen terecht. Daar doe ik ondersteuning en begeleiding, in situaties waar mensen met een eigen budget voor zorg de juiste hulp zoeken. Ik werk graag samen met teams en sta open voor een leidende rol waar dat past.
             </p>
             <div className="grid sm:grid-cols-3 gap-8">
               <div className="p-6 rounded-2xl bg-zorg-green/5 border border-zorg-green/10 hover:border-zorg-green/20 transition-colors">
@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-semibold text-zorg-green mb-2">Werk via instellingen</h3>
                 <p className="text-zorg-green-dark/80 text-sm leading-relaxed">
-                  Soms kom ik via zorgbemiddeling bij organisaties. Daar lever ik ondersteuning en begeleiding waar het nodig is.
+                  Bij organisaties lever ik ondersteuning en begeleiding waar het nodig is.
                 </p>
               </div>
               <div className="p-6 rounded-2xl bg-zorg-green/5 border border-zorg-green/10 hover:border-zorg-green/20 transition-colors">
@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-semibold text-zorg-green mb-2">Persoonsgebonden ondersteuning</h3>
                 <p className="text-zorg-green-dark/80 text-sm leading-relaxed">
-                  Mijn werk speelt zich af waar mensen met een eigen budget de juiste zorg en ondersteuning zoeken – op maat en op het juiste moment.
+                  Mijn werk speelt zich af waar mensen met een eigen budget de juiste zorg en ondersteuning zoeken, op maat en op het juiste moment.
                 </p>
               </div>
               <div className="p-6 rounded-2xl bg-zorg-green/5 border border-zorg-green/10 hover:border-zorg-green/20 transition-colors">
@@ -91,13 +91,13 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <p className="text-zorg-green-dark/90 leading-relaxed">
-                  Ik ben <strong className="text-zorg-green">Justin Smits</strong>. Ik heb de opleiding maatschappelijke zorg op het MBO gedaan en werk al een aantal jaar in de zorg – soms via zorgbemiddeling bij instellingen. In die tijd heb ik gewerkt op plekken waar jongeren, mensen in de verslavingszorg en mensen met zware psychische problematiek ondersteuning krijgen. In dat soort omgevingen voel ik me thuis.
+                  Ik ben <strong className="text-zorg-green">Justin Smits</strong>. Ik heb de opleiding maatschappelijke zorg op het MBO gedaan en werk al een aantal jaar in de zorg. In die tijd heb ik gewerkt op plekken waar jongeren, mensen in de verslavingszorg en mensen met zware psychische problematiek ondersteuning krijgen. In dat soort omgevingen voel ik me thuis.
                 </p>
                 <p className="text-zorg-green-dark/90 leading-relaxed">
-                  Wat anderen vaak opvalt: ik blijf kalm, wat er ook gebeurt. In drukke of emotionele situaties helpt dat – voor cliënten en voor het team. Ik sta open voor leidende functies en denk graag mee over hoe we zorg en ondersteuning goed organiseren.
+                  Wat anderen vaak opvalt: ik blijf kalm, wat er ook gebeurt. In drukke of emotionele situaties helpt dat voor cliënten en voor het team. Ik sta open voor leidende functies en denk graag mee over hoe we zorg en ondersteuning goed organiseren.
                 </p>
                 <p className="text-zorg-green-dark/90 leading-relaxed">
-                  Met Zorg Just In Time wil ik een duidelijk gezicht bieden. Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg – neem gerust contact op. Uw vraag staat centraal.
+                  Met Zorg Just In Time wil ik een duidelijk gezicht bieden. Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Neem gerust contact op. Uw vraag staat centraal.
                 </p>
                 <Link
                   href="/contact"
@@ -117,7 +117,7 @@ export default function Home() {
               Neem gerust contact op
             </h2>
             <p className="text-white/90 max-w-xl mb-8 leading-relaxed">
-              Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Stel uw vraag via het formulier – ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
+              Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Stel uw vraag via het formulier. Ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
             </p>
             <Link
               href="/contact"
