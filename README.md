@@ -2,6 +2,8 @@
 
 Website voor **Zorg Just In Time** – Justin Smits, ZZP in de zorg. Met contactformulier voor zorgvragers en zorgbemiddelaars.
 
+**Repository:** [github.com/Ebruarslan1/zorgjustintime](https://github.com/Ebruarslan1/zorgjustintime) *(private)*
+
 ## Kleuren
 
 - Wit (achtergrond)
@@ -20,7 +22,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 1. Push de code naar GitHub (of GitLab/Bitbucket).
 2. Ga naar [vercel.com](https://vercel.com) en log in.
-3. Klik op **Add New Project** en kies deze repository.
+3. Klik op **Add New Project** en kies deze repository.  
+   *Bij een private repo: geef Vercel toegang tot je GitHub-account (Settings → Git → Connect) zodat de private repo zichtbaar is.*
 4. Vercel herkent Next.js automatisch; klik op **Deploy**.
 
 Of via CLI:
