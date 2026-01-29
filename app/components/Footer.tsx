@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-center sm:text-left">
             <p className="font-semibold text-white">Zorg Just In Time</p>
-            <p className="text-sm text-white/80 mt-0.5">Justin Smits – Zorgbemiddeling PGB</p>
+            <p className="text-sm text-white/80 mt-0.5">Justin Smits – Werk in de zorg</p>
             <p className="text-sm text-white/70 mt-1">Almelo</p>
             <a href="mailto:zorgjustintime@gmail.com" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
               zorgjustintime@gmail.com

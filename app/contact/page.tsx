@@ -50,7 +50,7 @@ export default function ContactPage() {
           <div className="mb-10">
             <h1 className="text-3xl font-bold text-zorg-green mb-2">Neem contact op</h1>
             <p className="text-zorg-green-dark/80 leading-relaxed mb-6">
-              Stel uw vraag via het formulier – ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
+              Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Stel uw vraag via het formulier – ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
             </p>
             <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-4 text-sm text-zorg-green-dark/90">
               <p className="font-semibold text-zorg-green mb-2">Contactgegevens</p>
