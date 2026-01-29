@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --zorg-green: #1a4d3e;
+  --zorg-green-dark: #0f3329;
+  --zorg-green-light: #2d6a5a;
+  --background: #ffffff;
+  --foreground: #0f3329;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
