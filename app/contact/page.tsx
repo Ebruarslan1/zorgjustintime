@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 type Aanleiding = 'zorgvrager' | 'zorgbemiddelaar'
 
@@ -41,142 +43,138 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-zorg-green text-white shadow-md">
-        <div className="max-w-4xl mx-auto px-6 py-5 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold tracking-tight hover:opacity-90">
-            Zorg Just In Time
-          </Link>
-          <Link
-            href="/"
-            className="text-sm text-white/90 hover:text-white transition-colors"
-          >
-            ← Terug
-          </Link>
+      <Header />
+
+      <main className="flex-1 py-12 sm:py-16">
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="mb-10">
+            <h1 className="text-3xl font-bold text-zorg-green mb-2">Contact</h1>
+            <p className="text-zorg-green-dark/80 leading-relaxed">
+              Vul het formulier in. We reageren zo snel mogelijk.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-zorg-green/20 bg-white shadow-lg p-6 sm:p-8">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label className="block text-sm font-semibold text-zorg-green mb-3">
+                  Ik neem contact op als
+                </label>
+                <div className="flex gap-6">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="aanleiding"
+                      value="zorgvrager"
+                      checked={aanleiding === 'zorgvrager'}
+                      onChange={() => setAanleiding('zorgvrager')}
+                      className="w-4 h-4 text-zorg-green focus:ring-zorg-green border-zorg-green/30"
+                    />
+                    <span className="text-zorg-green-dark">Zorgvrager</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="aanleiding"
+                      value="zorgbemiddelaar"
+                      checked={aanleiding === 'zorgbemiddelaar'}
+                      onChange={() => setAanleiding('zorgbemiddelaar')}
+                      className="w-4 h-4 text-zorg-green focus:ring-zorg-green border-zorg-green/30"
+                    />
+                    <span className="text-zorg-green-dark">Zorgbemiddelaar</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="naam" className="block text-sm font-semibold text-zorg-green mb-1.5">
+                  Naam *
+                </label>
+                <input
+                  id="naam"
+                  type="text"
+                  required
+                  value={naam}
+                  onChange={(e) => setNaam(e.target.value)}
+                  className="w-full px-4 py-3 border border-zorg-green/25 rounded-xl focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none transition-shadow"
+                  placeholder="Uw naam"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-semibold text-zorg-green mb-1.5">
+                  E-mail *
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 border border-zorg-green/25 rounded-xl focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none transition-shadow"
+                  placeholder="uw@email.nl"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="telefoon" className="block text-sm font-semibold text-zorg-green mb-1.5">
+                  Telefoon
+                </label>
+                <input
+                  id="telefoon"
+                  type="tel"
+                  value={telefoon}
+                  onChange={(e) => setTelefoon(e.target.value)}
+                  className="w-full px-4 py-3 border border-zorg-green/25 rounded-xl focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none transition-shadow"
+                  placeholder="06 12345678"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="bericht" className="block text-sm font-semibold text-zorg-green mb-1.5">
+                  Bericht *
+                </label>
+                <textarea
+                  id="bericht"
+                  required
+                  rows={5}
+                  value={bericht}
+                  onChange={(e) => setBericht(e.target.value)}
+                  className="w-full px-4 py-3 border border-zorg-green/25 rounded-xl focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none resize-y transition-shadow"
+                  placeholder="Beschrijf uw vraag of verzoek..."
+                />
+              </div>
+
+              {status === 'success' && (
+                <p className="text-zorg-green font-medium rounded-xl bg-zorg-green/10 p-4">
+                  Bedankt! Uw bericht is verstuurd. We nemen zo snel mogelijk contact op.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-600 rounded-xl bg-red-50 p-4">
+                  Er ging iets mis bij het versturen. Probeer het later opnieuw of neem telefonisch contact op.
+                </p>
+              )}
+
+              <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="w-full bg-zorg-green text-white py-3.5 rounded-xl font-semibold hover:bg-zorg-green-dark disabled:opacity-60 transition-all shadow-md hover:shadow-lg"
+              >
+                {status === 'sending' ? 'Versturen...' : 'Verstuur bericht'}
+              </button>
+            </form>
+          </div>
+
+          <p className="mt-6 text-center text-sm text-zorg-green-dark/70">
+            <Link href="/" className="hover:text-zorg-green transition-colors">
+              ← Terug naar home
+            </Link>
+          </p>
         </div>
-      </header>
-
-      <main className="flex-1 max-w-2xl mx-auto w-full px-6 py-12">
-        <h2 className="text-2xl font-bold text-zorg-green mb-2">Contact</h2>
-        <p className="text-zorg-green-dark/90 mb-8">
-          Vul het formulier in. We reageren zo snel mogelijk.
-        </p>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label className="block text-sm font-medium text-zorg-green mb-2">
-              Ik neem contact op als
-            </label>
-            <div className="flex gap-4">
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input
-                  type="radio"
-                  name="aanleiding"
-                  value="zorgvrager"
-                  checked={aanleiding === 'zorgvrager'}
-                  onChange={() => setAanleiding('zorgvrager')}
-                  className="text-zorg-green focus:ring-zorg-green"
-                />
-                <span className="text-zorg-green-dark">Zorgvrager</span>
-              </label>
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input
-                  type="radio"
-                  name="aanleiding"
-                  value="zorgbemiddelaar"
-                  checked={aanleiding === 'zorgbemiddelaar'}
-                  onChange={() => setAanleiding('zorgbemiddelaar')}
-                  className="text-zorg-green focus:ring-zorg-green"
-                />
-                <span className="text-zorg-green-dark">Zorgbemiddelaar</span>
-              </label>
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="naam" className="block text-sm font-medium text-zorg-green mb-1">
-              Naam *
-            </label>
-            <input
-              id="naam"
-              type="text"
-              required
-              value={naam}
-              onChange={(e) => setNaam(e.target.value)}
-              className="w-full px-4 py-2 border border-zorg-green/30 rounded-lg focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none"
-              placeholder="Uw naam"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-zorg-green mb-1">
-              E-mail *
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border border-zorg-green/30 rounded-lg focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none"
-              placeholder="uw@email.nl"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="telefoon" className="block text-sm font-medium text-zorg-green mb-1">
-              Telefoon
-            </label>
-            <input
-              id="telefoon"
-              type="tel"
-              value={telefoon}
-              onChange={(e) => setTelefoon(e.target.value)}
-              className="w-full px-4 py-2 border border-zorg-green/30 rounded-lg focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none"
-              placeholder="06 12345678"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="bericht" className="block text-sm font-medium text-zorg-green mb-1">
-              Bericht *
-            </label>
-            <textarea
-              id="bericht"
-              required
-              rows={5}
-              value={bericht}
-              onChange={(e) => setBericht(e.target.value)}
-              className="w-full px-4 py-2 border border-zorg-green/30 rounded-lg focus:ring-2 focus:ring-zorg-green focus:border-zorg-green outline-none resize-y"
-              placeholder="Beschrijf uw vraag of verzoek..."
-            />
-          </div>
-
-          {status === 'success' && (
-            <p className="text-zorg-green font-medium">
-              Bedankt! Uw bericht is verstuurd. We nemen zo snel mogelijk contact op.
-            </p>
-          )}
-          {status === 'error' && (
-            <p className="text-red-600">
-              Er ging iets mis bij het versturen. Probeer het later opnieuw of neem telefonisch contact op.
-            </p>
-          )}
-
-          <button
-            type="submit"
-            disabled={status === 'sending'}
-            className="w-full bg-zorg-green text-white py-3 rounded-lg font-medium hover:bg-zorg-green-dark disabled:opacity-60 transition-colors"
-          >
-            {status === 'sending' ? 'Versturen...' : 'Verstuur bericht'}
-          </button>
-        </form>
       </main>
 
-      <footer className="bg-zorg-green text-white mt-auto">
-        <div className="max-w-4xl mx-auto px-6 py-6 text-center text-sm text-white/90">
-          © {new Date().getFullYear()} Zorg Just In Time – Justin Smits
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
