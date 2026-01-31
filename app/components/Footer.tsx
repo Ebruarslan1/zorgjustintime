@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="text-center sm:text-left">
           <p className="font-semibold text-white">Zorg Just In Time</p>
-          <p className="text-sm text-white/80 mt-0.5">Justin Smits – Werk in de GGZ</p>
+          <p className="text-sm text-white/80 mt-0.5">Justin Smits – Begeleiding op maat</p>
           <p className="text-sm text-white/70 mt-1">Almelo</p>
           <a href="mailto:zorgjustintime@hotmail.com" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
             zorgjustintime@hotmail.com

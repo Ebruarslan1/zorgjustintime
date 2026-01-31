@@ -10,7 +10,7 @@ export default function Header() {
         >
           Zorg Just In Time
         </Link>
-        <nav className="flex items-center gap-8" aria-label="Hoofdnavigatie">
+        <nav className="flex items-center gap-6 sm:gap-8" aria-label="Hoofdnavigatie">
           <Link
             href="/"
             className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
@@ -22,6 +22,12 @@ export default function Header() {
             className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
           >
             Over mij
+          </Link>
+          <Link
+            href="/pgb"
+            className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
+          >
+            PGB-begeleiding
           </Link>
           <Link
             href="/contact"

@@ -11,8 +11,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Zorg Just In Time | Justin Smits – Werk in de GGZ',
-  description: 'Zorg Just In Time – Justin Smits werkt in de GGZ, soms via zorgbemiddeling bij instellingen. Ervaring met maatschappelijke zorg, persoonsgebonden ondersteuning en open voor leidende functies. Almelo. Neem gerust contact op.',
+  title: 'Zorg Just In Time | Justin Smits – Begeleiding kinderen, jongeren en volwassenen',
+  description: 'Betrouwbare begeleiding voor kinderen, jongeren, jongvolwassenen en volwassenen – complex of minder complex. Rust, structuur en ondersteuning op maat. PGB-zorg, Overijssel. Justin Smits – Almelo.',
 }
 
 export default function RootLayout({

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -13,100 +14,157 @@ export default function Home() {
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,0,0,0.15)_0%,transparent_50%)]" aria-hidden />
           <div className="relative max-w-5xl mx-auto px-6 py-20 sm:py-28">
             <p className="text-zorg-green-light text-sm font-medium uppercase tracking-wider mb-4">
-              Justin Smits – Werk in de GGZ
+              Justin Smits – Zorg Just In Time
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight max-w-2xl leading-tight">
-              Zorg die past, wanneer het nodig is
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight max-w-3xl leading-tight">
+              Betrouwbare begeleiding voor kinderen, jongeren, jongvolwassenen én volwassenen – complex of minder complex
             </h1>
             <p className="mt-6 text-lg text-white/90 max-w-xl leading-relaxed">
-              Welkom. Graag maak ik kennis. Heeft u een vraag over ondersteuning, samenwerking of een leidende rol in de zorg? Ik hoor het graag van u.
+              Rust, structuur en ondersteuning op maat – voor jouw kind of cliënt.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
               >
-                Stel uw vraag
+                Neem contact op
               </Link>
-              <a
-                href="#over-mij"
+              <Link
+                href="/pgb"
                 className="inline-flex items-center justify-center border-2 border-white/60 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors"
               >
-                Meer over mij
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Mijn werk */}
-        <section className="py-16 sm:py-20 bg-white">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
-              Mijn werk
-            </h2>
-            <p className="text-zorg-green-dark/80 max-w-2xl mb-10 leading-relaxed">
-              Ik kom via zorgbemiddeling bij instellingen terecht. Daar doe ik ondersteuning en begeleiding, in situaties waar mensen met een eigen budget voor zorg de juiste hulp zoeken. Ik werk graag samen met teams en sta open voor een leidende rol waar dat past.
-            </p>
-            <div className="grid sm:grid-cols-3 gap-8">
-              <div className="p-6 rounded-2xl bg-zorg-green/5 border border-zorg-green/10 hover:border-zorg-green/20 transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-zorg-green/10 flex items-center justify-center text-zorg-green font-bold text-lg mb-4">
-                  1
-                </div>
-                <h3 className="font-semibold text-zorg-green mb-2">Werk via instellingen</h3>
-                <p className="text-zorg-green-dark/80 text-sm leading-relaxed">
-                  Bij organisaties lever ik ondersteuning en begeleiding waar het nodig is.
-                </p>
-              </div>
-              <div className="p-6 rounded-2xl bg-zorg-green/5 border border-zorg-green/10 hover:border-zorg-green/20 transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-zorg-green/10 flex items-center justify-center text-zorg-green font-bold text-lg mb-4">
-                  2
-                </div>
-                <h3 className="font-semibold text-zorg-green mb-2">Persoonsgebonden ondersteuning</h3>
-                <p className="text-zorg-green-dark/80 text-sm leading-relaxed">
-                  Mijn werk speelt zich af waar mensen met een eigen budget de juiste zorg en ondersteuning zoeken, op maat en op het juiste moment.
-                </p>
-              </div>
-              <div className="p-6 rounded-2xl bg-zorg-green/5 border border-zorg-green/10 hover:border-zorg-green/20 transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-zorg-green/10 flex items-center justify-center text-zorg-green font-bold text-lg mb-4">
-                  3
-                </div>
-                <h3 className="font-semibold text-zorg-green mb-2">Samenwerking & leiding</h3>
-                <p className="text-zorg-green-dark/80 text-sm leading-relaxed">
-                  Ik werk graag in teams en sta open voor leidende functies. Korte lijnen en duidelijke afstemming vind ik belangrijk.
-                </p>
-              </div>
+                Bekijk PGB-begeleiding
+              </Link>
             </div>
           </div>
         </section>
 
         {/* Over mij */}
-        <section id="over-mij" className="py-16 sm:py-20 bg-zorg-green/5 scroll-mt-20">
+        <section id="over-mij" className="py-16 sm:py-20 bg-white scroll-mt-20">
           <div className="max-w-5xl mx-auto px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
               Over mij
             </h2>
             <div className="flex flex-col sm:flex-row gap-10 items-start">
-              <div className="flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 rounded-2xl bg-zorg-green flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
-                JS
+              <div className="flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden shadow-lg relative">
+                <Image
+                  src="/justin.png"
+                  alt="Justin Smits"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 96px, 128px"
+                  priority
+                />
               </div>
               <div className="space-y-4">
                 <p className="text-zorg-green-dark/90 leading-relaxed">
-                  Ik ben <strong className="text-zorg-green">Justin Smits</strong>. Ik heb de opleiding maatschappelijke zorg op het MBO gedaan en werk al een aantal jaar in de zorg. In die tijd heb ik gewerkt op plekken waar jongeren, mensen in de verslavingszorg en mensen met zware psychische problematiek ondersteuning krijgen. In dat soort omgevingen voel ik me thuis.
-                </p>
-                <p className="text-zorg-green-dark/90 leading-relaxed">
-                  Wat anderen vaak opvalt: ik blijf kalm, wat er ook gebeurt. In drukke of emotionele situaties helpt dat voor cliënten en voor het team. Ik sta open voor leidende functies en denk graag mee over hoe we zorg en ondersteuning goed organiseren.
-                </p>
-                <p className="text-zorg-green-dark/90 leading-relaxed">
-                  Met Zorg Just In Time wil ik een duidelijk gezicht bieden. Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Neem gerust contact op. Uw vraag staat centraal.
+                  Mijn naam is <strong className="text-zorg-green">Justin</strong>, zelfstandig zorgprofessional in Overijssel (woonachtig in Almelo). Ik begeleid kinderen, jongeren, jongvolwassenen én volwassenen, zowel individueel als in samenwerking met ouders, instellingen en bemiddelingsbureaus. Ik heb ervaring met zowel complexe zorgvragen (autisme, trauma, hechtingsproblematiek, suïcidaliteit, psychische ontregeling) als minder intensieve begeleiding. Mijn manier van werken is duidelijk, rustig en betrokken, met oog voor veiligheid en continuïteit.
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-block mt-4 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                  className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
                 >
                   Neem contact met mij op →
                 </Link>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Expertise */}
+        <section className="py-16 sm:py-20 bg-zorg-green/5">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
+              Expertise
+            </h2>
+            <ul className="grid sm:grid-cols-2 gap-3 text-zorg-green-dark/90 leading-relaxed">
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Eén-op-één begeleiding en langdurige trajecten
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Groepsbegeleiding en woonvoorzieningen
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Combinatieproblematiek: autisme + trauma / hechtingsproblematiek, agressieregulatie, stemmingsproblematiek
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Cliënten die tijdelijk in acute psychose of ontregeling belanden
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                VG-profielen (o.a. VG7) en LVB-jeugd
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Minder intensieve begeleiding met focus op vertrouwen en stabiliteit
+              </li>
+              <li className="flex items-start gap-3 sm:col-span-2">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Samenwerking met ouders en betrokken professionals
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Mijn manier van werken */}
+        <section className="py-16 sm:py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
+              Mijn manier van werken
+            </h2>
+            <ul className="grid sm:grid-cols-2 gap-3 text-zorg-green-dark/90 leading-relaxed">
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Rustig, duidelijk en betrokken
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Open communicatie met ouders en betrokkenen
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Afstemming op wat haalbaar en helpend is voor de cliënt
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Veiligheid en continuïteit centraal
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Praktisch */}
+        <section className="py-16 sm:py-20 bg-zorg-green/5">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
+              Praktisch
+            </h2>
+            <ul className="grid sm:grid-cols-2 gap-3 text-zorg-green-dark/90 leading-relaxed">
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Werkgebied: Overijssel (±80 km)
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Inzet: langdurige trajecten, PGB-zorg, samenwerking via bemiddelingsbureaus
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                Intensieve én minder intensieve begeleiding
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                AGB-code aanwezig
+              </li>
+              <li className="flex items-start gap-3 sm:col-span-2">
+                <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
+                BHV en Medicatieveiligheid: altijd up-to-date
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -116,14 +174,17 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
               Neem gerust contact op
             </h2>
-            <p className="text-white/90 max-w-xl mb-8 leading-relaxed">
-              Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Stel uw vraag via het formulier. Ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
+            <p className="text-white/90 max-w-2xl mb-6 leading-relaxed">
+              Wil je kennismaken of overleggen of mijn begeleiding past bij jouw situatie? Neem contact op via het contactformulier of bel direct.
+            </p>
+            <p className="text-white/90 max-w-2xl mb-8 leading-relaxed">
+              Samen kijken we hoe ik jouw kind of cliënt kan ondersteunen, veilig en betrouwbaar.
             </p>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
             >
-              Stel uw vraag
+              Neem contact op
             </Link>
           </div>
         </section>
