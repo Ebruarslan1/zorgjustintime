@@ -9,8 +9,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Zorg Just In Time | Justin Smits – Werk in de zorg',
-  description: 'Zorg Just In Time – Justin Smits werkt in de zorg, soms via zorgbemiddeling bij instellingen. Ervaring met maatschappelijke zorg, persoonsgebonden ondersteuning en open voor leidende functies. Almelo. Neem gerust contact op.',
+  title: 'Zorg Just In Time | Justin Smits – Werk in de GGZ',
+  description: 'Zorg Just In Time – Justin Smits werkt in de GGZ, soms via zorgbemiddeling bij instellingen. Ervaring met maatschappelijke zorg, persoonsgebonden ondersteuning en open voor leidende functies. Almelo. Neem gerust contact op.',
 }
 
 export default function RootLayout({

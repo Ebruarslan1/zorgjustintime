@@ -171,6 +171,10 @@ export default function ContactPage() {
                 {status === 'sending' ? 'Versturen...' : 'Verstuur bericht'}
               </button>
             </form>
+            <p className="mt-4 text-center text-sm text-zorg-green-dark/60">
+              Uw gegevens worden verwerkt volgens onze{' '}
+              <Link href="/privacy" className="text-zorg-green hover:underline">privacyverklaring</Link>.
+            </p>
           </div>
 
           <p className="mt-6 text-center text-sm text-zorg-green-dark/70">

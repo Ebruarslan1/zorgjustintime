@@ -13,7 +13,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,0,0,0.15)_0%,transparent_50%)]" aria-hidden />
           <div className="relative max-w-5xl mx-auto px-6 py-20 sm:py-28">
             <p className="text-zorg-green-light text-sm font-medium uppercase tracking-wider mb-4">
-              Justin Smits – Werk in de zorg
+              Justin Smits – Werk in de GGZ
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight max-w-2xl leading-tight">
               Zorg die past, wanneer het nodig is
