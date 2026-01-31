@@ -155,16 +155,16 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Praktisch */}
+        {/* Praktische informatie */}
         <section className="py-16 sm:py-20 bg-zorg-green/5">
           <div className="max-w-5xl mx-auto px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
-              Praktisch
+              Praktische informatie
             </h2>
             <ul className="grid sm:grid-cols-2 gap-3 text-zorg-green-dark/90 leading-relaxed">
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
-                Werkgebied: Overijssel (±80 km)
+                Werkgebied: Overijssel (ongeveer 80 km vanaf Almelo)
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
