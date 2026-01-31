@@ -30,6 +30,14 @@ export default function Home() {
                 Neem contact op
               </Link>
               <a
+                href="https://wa.me/31614840145"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
+              >
+                Stuur meteen een WhatsApp
+              </a>
+              <a
                 href="#pgb-begeleiding"
                 className="inline-flex items-center justify-center border-2 border-white/60 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors"
               >
@@ -198,12 +206,22 @@ export default function Home() {
             <p className="text-white/90 max-w-2xl mb-8 leading-relaxed">
               Samen kijken we hoe begeleiding onder PGB bij jou past, veilig en betrouwbaar.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
-            >
-              Neem contact op
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
+              >
+                Neem contact op
+              </Link>
+              <a
+                href="https://wa.me/31614840145"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
+              >
+                Stuur meteen een WhatsApp
+              </a>
+            </div>
           </div>
         </section>
       </main>
