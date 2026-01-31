@@ -3,7 +3,7 @@ import { Resend } from 'resend'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-const TO_EMAIL = process.env.CONTACT_EMAIL_TO || 'zorgjustintime@hotmail.com'
+const TO_EMAIL = process.env.CONTACT_EMAIL_TO || 'j.smits@zorgjustintime.nl'
 const FROM_EMAIL = process.env.RESEND_FROM || 'Zorg Just In Time <onboarding@resend.dev>'
 
 export async function POST(request: NextRequest) {

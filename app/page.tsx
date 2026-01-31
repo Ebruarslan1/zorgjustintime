@@ -196,7 +196,7 @@ export default function Home() {
               Wil je kennismaken of overleggen of mijn begeleiding past bij jouw situatie? Neem contact op via het contactformulier of bel direct.
             </p>
             <p className="text-white/90 max-w-2xl mb-8 leading-relaxed">
-              Samen kijken we hoe ik jouw kind of cliënt kan ondersteunen, veilig en betrouwbaar.
+              Samen kijken we hoe begeleiding onder PGB bij jou past, veilig en betrouwbaar.
             </p>
             <Link
               href="/contact"

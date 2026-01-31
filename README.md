@@ -54,7 +54,7 @@ Het contactformulier stuurt berichten naar een e-mailadres via **Resend**.
    npm run dev
    ```
 
-Berichten gaan standaard naar **zorgjustintime@hotmail.com**. Je kunt een ander adres instellen met `CONTACT_EMAIL_TO`. Optioneel kun je `RESEND_FROM` zetten als je een geverifieerd domein hebt; anders wordt er vanaf het Resend-testadres verzonden. Zie `.env.example` voor alle opties.
+Berichten gaan standaard naar **j.smits@zorgjustintime.nl**. Je kunt een ander adres instellen met `CONTACT_EMAIL_TO`. Optioneel kun je `RESEND_FROM` zetten als je een geverifieerd domein hebt; anders wordt er vanaf het Resend-testadres verzonden. Zie `.env.example` voor alle opties.
 
 ## SEO
 

@@ -8,7 +8,7 @@ const jsonLd = {
     'Betrouwbare begeleiding voor kinderen, jongeren en volwassenen. Rust, structuur en ondersteuning op maat. PGB-zorg in Overijssel.',
   url: siteUrl,
   telephone: '+31614840145',
-  email: 'zorgjustintime@hotmail.com',
+  email: 'j.smits@zorgjustintime.nl',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Almelo',
