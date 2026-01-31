@@ -6,8 +6,8 @@ export default function Footer() {
           <p className="font-semibold text-white">Zorg Just In Time</p>
           <p className="text-sm text-white/80 mt-0.5">Justin Smits – Werk in de GGZ</p>
           <p className="text-sm text-white/70 mt-1">Almelo</p>
-          <a href="mailto:zorgjustintime@gmail.com" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
-            zorgjustintime@gmail.com
+          <a href="mailto:zorgjustintime@hotmail.com" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
+            zorgjustintime@hotmail.com
           </a>
           <a href="tel:+31614840145" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
             06 14 84 01 45

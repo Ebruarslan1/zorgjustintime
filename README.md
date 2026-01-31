@@ -33,6 +33,25 @@ npm i -g vercel
 vercel
 ```
 
-## Contactformulier
+## Contactformulier en e-mail
 
-Het formulier op `/contact` stuurt een POST naar `/api/contact`. Daar kun je later e-mail (bijv. Resend of SendGrid) of een database toevoegen om berichten op te slaan of door te sturen.
+Het contactformulier stuurt berichten naar een e-mailadres via **Resend**.
+
+### Lokaal en op Vercel
+
+1. Maak een gratis account op [resend.com](https://resend.com).
+2. Ga naar **API Keys** en maak een nieuwe key aan.
+3. Zet de key in je omgeving:
+   - **Lokaal:** maak een bestand `.env.local` met:
+     ```
+     RESEND_API_KEY=re_xxxxxxxxxxxx
+     ```
+   - **Vercel:** ga naar je project → **Settings** → **Environment Variables** en voeg `RESEND_API_KEY` toe.
+
+4. Installeer dependencies en start:
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+Berichten gaan standaard naar **zorgjustintime@hotmail.com**. Je kunt een ander adres instellen met `CONTACT_EMAIL_TO`. Optioneel kun je `RESEND_FROM` zetten als je een geverifieerd domein hebt; anders wordt er vanaf het Resend-testadres verzonden. Zie `.env.example` voor alle opties.

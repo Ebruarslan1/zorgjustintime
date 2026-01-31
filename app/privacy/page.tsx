@@ -23,7 +23,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">1. Wie zijn wij?</h2>
               <p>
-                Zorg Just In Time is verantwoordelijk voor de verwerking van uw persoonsgegevens op deze website. Justin Smits voert de activiteiten uit. U kunt ons bereiken via zorgjustintime@gmail.com of 06 14 84 01 45. Ons adres: Almelo. KVK 87265931, vestiging 000053185749.
+                Zorg Just In Time is verantwoordelijk voor de verwerking van uw persoonsgegevens op deze website. Justin Smits voert de activiteiten uit. U kunt ons bereiken via zorgjustintime@hotmail.com of 06 14 84 01 45. Ons adres: Almelo. KVK 87265931, vestiging 000053185749.
               </p>
             </section>
 
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">6. Uw rechten</h2>
               <p>
-                U heeft het recht om uw gegevens in te zien, te laten corrigeren of te laten verwijderen. U kunt ook een verzoek doen om uw gegevens over te dragen of bezwaar maken tegen de verwerking. Stuur daarvoor een e-mail naar zorgjustintime@gmail.com. Als u een klacht heeft over hoe wij met uw gegevens omgaan, kunt u zich wenden tot de Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl).
+                U heeft het recht om uw gegevens in te zien, te laten corrigeren of te laten verwijderen. U kunt ook een verzoek doen om uw gegevens over te dragen of bezwaar maken tegen de verwerking. Stuur daarvoor een e-mail naar zorgjustintime@hotmail.com. Als u een klacht heeft over hoe wij met uw gegevens omgaan, kunt u zich wenden tot de Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl).
               </p>
             </section>
 
@@ -86,7 +86,14 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">10. Vragen?</h2>
               <p>
-                Heeft u vragen over deze privacyverklaring of over het gebruik van uw gegevens? Neem dan contact met ons op via <a href="mailto:zorgjustintime@gmail.com" className="text-zorg-green underline hover:text-zorg-green-dark">zorgjustintime@gmail.com</a> of bel 06 14 84 01 45.
+                Heeft u vragen over deze privacyverklaring of over het gebruik van uw gegevens? Neem dan contact met ons op via <a href="mailto:zorgjustintime@hotmail.com" className="text-zorg-green underline hover:text-zorg-green-dark">zorgjustintime@hotmail.com</a> of bel 06 14 84 01 45.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">11. Wat staat er verder op de website?</h2>
+              <p>
+                Op deze website vindt u deze <strong>privacyverklaring</strong> en een <strong>cookiebanner</strong>. De cookiebanner informeert bezoekers dat wij geen tracking- of advertentiecookies gebruiken en verwijst naar deze pagina. Algemene voorwaarden zijn voor een eenvoudige contactwebsite niet wettelijk verplicht. Als u in het kader van uw werk opdrachten of overeenkomsten aangaat, kunnen algemene voorwaarden wel handig zijn; dat is aan u.
               </p>
             </section>
           </div>
