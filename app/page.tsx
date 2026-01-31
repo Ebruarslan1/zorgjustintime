@@ -20,7 +20,7 @@ export default function Home() {
               Betrouwbare begeleiding voor kinderen, jongeren en volwassenen
             </h1>
             <p className="mt-4 text-lg text-white/90 max-w-xl leading-relaxed">
-              Rust, structuur en ondersteuning op maat. Voor jouw kind of cliënt.
+              Rust, structuur en ondersteuning op maat.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
