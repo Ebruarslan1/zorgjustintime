@@ -18,16 +18,16 @@ export default function Header() {
             Home
           </Link>
           <Link
+            href="/#pgb-begeleiding"
+            className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
+          >
+            PGB-begeleiding
+          </Link>
+          <Link
             href="/#over-mij"
             className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
           >
             Over mij
-          </Link>
-          <Link
-            href="/pgb"
-            className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
-          >
-            PGB-begeleiding
           </Link>
           <Link
             href="/contact"

@@ -55,3 +55,7 @@ Het contactformulier stuurt berichten naar een e-mailadres via **Resend**.
    ```
 
 Berichten gaan standaard naar **zorgjustintime@hotmail.com**. Je kunt een ander adres instellen met `CONTACT_EMAIL_TO`. Optioneel kun je `RESEND_FROM` zetten als je een geverifieerd domein hebt; anders wordt er vanaf het Resend-testadres verzonden. Zie `.env.example` voor alle opties.
+
+## SEO
+
+De site is SEO-vriendelijk ingericht: unieke titel en beschrijving per pagina, Open Graph en Twitter Cards, JSON-LD (LocalBusiness), sitemap en robots.txt. Zet op Vercel de omgevingsvariabele **`NEXT_PUBLIC_SITE_URL`** op je echte domein (bijv. `https://zorgjustintime.nl`) zodat canonieke URLs, de sitemap en Open Graph-afbeeldingen correct werken.

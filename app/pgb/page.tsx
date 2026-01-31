@@ -2,9 +2,13 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://zorgjustintime.nl'
+
 export const metadata = {
-  title: 'PGB-begeleiding | Zorg Just In Time',
-  description: 'PGB-begeleiding voor kinderen, jongeren, jongvolwassenen en volwassenen. Rust, structuur en ondersteuning op maat. Justin Smits – Zorg Just In Time.',
+  title: 'PGB-begeleiding',
+  description:
+    'PGB-begeleiding voor kinderen, jongeren en volwassenen. Rust, structuur en ondersteuning op maat. Rechtstreeks of via bemiddelingsbureau. Justin Smits, Zorg Just In Time.',
+  alternates: { canonical: `${siteUrl}/pgb` },
 }
 
 export default function PGBPage() {
@@ -16,14 +20,14 @@ export default function PGBPage() {
         <div className="max-w-3xl mx-auto px-6">
           <h1 className="text-3xl font-bold text-zorg-green mb-4">PGB-begeleiding</h1>
           <p className="text-zorg-green-dark/80 text-lg leading-relaxed mb-10">
-            Begeleiding op basis van een persoonsgebonden budget (PGB): op maat, veilig en betrouwbaar. Voor kinderen, jongeren, jongvolwassenen én volwassenen, complex of minder complex.
+            Begeleiding op basis van een persoonsgebonden budget (PGB): op maat, veilig en betrouwbaar. Voor kinderen, jongeren en volwassenen, complex of minder complex.
           </p>
 
           <div className="space-y-8 text-zorg-green-dark/90 leading-relaxed">
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mb-3">Wat bied ik aan?</h2>
               <p>
-                Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Ik werk met PGB-zorg en via bemiddelingsbureaus.
+                Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Je kunt rechtstreeks met mij afspreken, of via een bemiddelingsbureau. Ik werk met PGB-zorg.
               </p>
             </section>
 
@@ -37,7 +41,7 @@ export default function PGBPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mb-3">Werkgebied en inzet</h2>
               <p>
-                Ik werk in Overijssel en omstreken (ongeveer 80 km rond Almelo). Langdurige trajecten, PGB-zorg en samenwerking via bemiddelingsbureaus zijn mogelijk. Ik heb een AGB-code; BHV en Medicatieveiligheid zijn up-to-date.
+                Ik werk in Overijssel en omstreken (ongeveer 80 km rond Almelo). Langdurige trajecten, PGB-zorg en samenwerking via bemiddelingsbureaus zijn mogelijk. Ik heb een AGB-code. BHV en Medicatieveiligheid zijn up-to-date.
               </p>
             </section>
 

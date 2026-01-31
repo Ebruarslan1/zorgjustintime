@@ -12,30 +12,48 @@ export default function Home() {
         {/* Hero */}
         <section className="relative overflow-hidden bg-zorg-green text-white">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,0,0,0.15)_0%,transparent_50%)]" aria-hidden />
-          <div className="relative max-w-5xl mx-auto px-6 py-20 sm:py-28">
-            <p className="text-zorg-green-light text-sm font-medium uppercase tracking-wider mb-4">
-              Justin Smits – Zorg Just In Time
+          <div className="relative max-w-5xl mx-auto px-6 py-16 sm:py-24">
+            <p className="text-zorg-green-light text-sm font-medium uppercase tracking-wider mb-3">
+              Zorg Just In Time
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight max-w-3xl leading-tight">
-              Betrouwbare begeleiding voor kinderen, jongeren, jongvolwassenen én volwassenen – complex of minder complex
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight max-w-2xl leading-tight">
+              Betrouwbare begeleiding voor kinderen, jongeren en volwassenen
             </h1>
-            <p className="mt-6 text-lg text-white/90 max-w-xl leading-relaxed">
-              Rust, structuur en ondersteuning op maat – voor jouw kind of cliënt.
+            <p className="mt-4 text-lg text-white/90 max-w-xl leading-relaxed">
+              Rust, structuur en ondersteuning op maat. Voor jouw kind of cliënt.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center bg-white text-zorg-green px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg"
               >
                 Neem contact op
               </Link>
-              <Link
-                href="/pgb"
+              <a
+                href="#pgb-begeleiding"
                 className="inline-flex items-center justify-center border-2 border-white/60 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors"
               >
                 Bekijk PGB-begeleiding
-              </Link>
+              </a>
             </div>
+          </div>
+        </section>
+
+        {/* PGB-begeleiding */}
+        <section id="pgb-begeleiding" className="py-16 sm:py-20 bg-zorg-green/5 scroll-mt-20">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
+              PGB-begeleiding
+            </h2>
+            <p className="text-zorg-green-dark/90 max-w-2xl leading-relaxed mb-6">
+              Begeleiding op basis van een persoonsgebonden budget: op maat, veilig en betrouwbaar. Je kunt rechtstreeks met mij afspreken of via een bemiddelingsbureau. Voor kinderen, jongeren en volwassenen, intensief of minder intensief.
+            </p>
+            <Link
+              href="/pgb"
+              className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+            >
+              Meer over PGB-begeleiding →
+            </Link>
           </div>
         </section>
 

@@ -2,9 +2,12 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://zorgjustintime.nl'
+
 export const metadata = {
-  title: 'Privacyverklaring | Zorg Just In Time',
-  description: 'Privacyverklaring van Zorg Just In Time – hoe wij omgaan met uw gegevens.',
+  title: 'Privacyverklaring',
+  description: 'Privacyverklaring van Zorg Just In Time. Hoe wij omgaan met uw gegevens.',
+  alternates: { canonical: `${siteUrl}/privacy` },
 }
 
 export default function PrivacyPage() {
