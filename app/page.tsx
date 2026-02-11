@@ -25,42 +25,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PGB-begeleiding en Samenwerking */}
-        <section id="pgb-begeleiding" className="py-16 sm:py-20 bg-zorg-green/5 scroll-mt-20">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="grid sm:grid-cols-2 gap-10">
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
-                  PGB-begeleiding
-                </h2>
-                <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
-                  Begeleiding op basis van een persoonsgebonden budget: cliënten of ouders (voor hun kind) kunnen rechtstreeks bij mij inkopen. Op maat, veilig en betrouwbaar. Voor kinderen, jongeren en volwassenen, intensief of minder intensief.
-                </p>
-                <Link
-                  href="/pgb"
-                  className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
-                >
-                  Meer over PGB-begeleiding →
-                </Link>
-              </div>
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
-                  Samenwerking
-                </h2>
-                <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
-                  Voor bemiddelingsbureaus en zorginstellingen die met mij willen samenwerken: ik zet me in op basis van jullie vraag.
-                </p>
-                <Link
-                  href="#samenwerking"
-                  className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
-                >
-                  Lees meer over samenwerking →
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Over mij */}
         <section id="over-mij" className="py-16 sm:py-20 bg-white scroll-mt-20">
           <div className="max-w-5xl mx-auto px-6">
@@ -87,6 +51,87 @@ export default function Home() {
                   className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
                 >
                   Neem contact met mij op →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Twee beknopte blokken: link naar PGB en Samenwerking op home */}
+        <section className="py-16 sm:py-20 bg-zorg-green/5">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid sm:grid-cols-2 gap-10">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
+                  PGB-begeleiding
+                </h2>
+                <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
+                  Begeleiding op basis van een persoonsgebonden budget: cliënten of ouders (voor hun kind) kunnen rechtstreeks bij mij inkopen. Op maat, veilig en betrouwbaar. Voor kinderen, jongeren en volwassenen, intensief of minder intensief.
+                </p>
+                <Link
+                  href="#pgb-begeleiding"
+                  className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                >
+                  Meer over PGB-begeleiding →
+                </Link>
+              </div>
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
+                  Samenwerking
+                </h2>
+                <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
+                  Voor bemiddelingsbureaus en zorginstellingen die met mij willen samenwerken: ik zet me in op basis van jullie vraag.
+                </p>
+                <Link
+                  href="#samenwerking"
+                  className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                >
+                  Lees meer over samenwerking →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PGB-begeleiding (uitgebreid) */}
+        <section id="pgb-begeleiding" className="py-16 sm:py-20 bg-white scroll-mt-20">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
+              PGB-begeleiding
+            </h2>
+            <p className="text-zorg-green-dark/90 max-w-2xl text-lg leading-relaxed mb-10">
+              Begeleiding op basis van een persoonsgebonden budget (PGB): op maat, veilig en betrouwbaar. Voor kinderen, jongeren en volwassenen, complex of minder complex.
+            </p>
+
+            <div className="space-y-8 text-zorg-green-dark/90 leading-relaxed">
+              <div>
+                <h3 className="text-xl font-semibold text-zorg-green mb-3">Wat bied ik aan?</h3>
+                <p>
+                  Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Je kunt rechtstreeks met mij afspreken—als cliënt of als ouder voor je kind. Ik werk met PGB-zorg.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-zorg-green mb-3">Voor wie?</h3>
+                <p>
+                  Voor kinderen, jongeren, jongvolwassenen en volwassenen. Zowel bij complexe zorgvragen (autisme, trauma, hechtingsproblematiek, suïcidaliteit, psychische ontregeling) als bij minder intensieve begeleiding. VG-profielen (o.a. VG7) en LVB-jeugd: daar heb ik ervaring mee.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-zorg-green mb-3">Werkgebied en inzet</h3>
+                <p>
+                  Ik werk in Overijssel en omstreken (ongeveer 80 km rond Almelo). Langdurige trajecten en PGB-zorg zijn mogelijk. Ik heb een AGB-code. BHV en Medicatieveiligheid zijn up-to-date.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-zorg-green/5 border border-zorg-green/15 p-6">
+                <h3 className="text-xl font-semibold text-zorg-green mb-3">Kennismaken?</h3>
+                <p className="mb-4">
+                  Wil je kennismaken of overleggen of mijn begeleiding past bij jouw situatie? Neem contact op via het contactformulier of bel direct. Samen kijken we hoe ik jouw kind of cliënt kan ondersteunen, veilig en betrouwbaar.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-block bg-zorg-green text-white px-6 py-3 rounded-xl font-semibold hover:bg-zorg-green-dark transition-colors"
+                >
+                  Neem contact op
                 </Link>
               </div>
             </div>
