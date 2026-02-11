@@ -48,13 +48,13 @@ export default function Home() {
                   Samenwerking
                 </h2>
                 <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
-                  Voor bemiddelingsbureaus en zorginstellingen die met mij willen samenwerken: ik zet me in op basis van jullie vraag. Heeft uw bureau of instelling interesse in inzet of samenwerking? Neem gerust contact op.
+                  Voor bemiddelingsbureaus en zorginstellingen die met mij willen samenwerken: ik zet me in op basis van jullie vraag.
                 </p>
                 <Link
-                  href="/contact"
+                  href="#samenwerking"
                   className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
                 >
-                  Neem contact op →
+                  Lees meer over samenwerking →
                 </Link>
               </div>
             </div>
@@ -93,8 +93,65 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Samenwerking (uitgebreid) */}
+        <section id="samenwerking" className="py-16 sm:py-20 bg-zorg-green/5 scroll-mt-20">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-10">
+              Samenwerking
+            </h2>
+
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-semibold text-zorg-green mb-4">
+                  Bemiddelingsbureaus
+                </h3>
+                <div className="space-y-4 text-zorg-green-dark/90 leading-relaxed">
+                  <p>
+                    Ik werk graag samen met bemiddelingsbureaus binnen de gehandicaptenzorg en aanverwante zorgsectoren. Door mijn brede werkervaring binnen verschillende organisaties en doelgroepen ben ik flexibel inzetbaar en kan ik mij snel aanpassen aan nieuwe teams, werkwijzen en zorgvragen.
+                  </p>
+                  <p>
+                    Ik ben inzetbaar voor uiteenlopende opdrachten, variërend van intensieve begeleidingsvragen tot stabiliserende en ondersteunende zorg. Binnen mijn werk staat professionaliteit, betrouwbaarheid en duidelijke communicatie centraal. Ik werk transparant en hecht veel waarde aan het nakomen van afspraken en het waarborgen van continuïteit van zorg.
+                  </p>
+                  <p>
+                    Bent u als bemiddelingsbureau op zoek naar een zelfstandige en ervaren zorgprofessional, dan kom ik graag in contact om de mogelijkheden te bespreken.
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                  >
+                    Neem contact op →
+                  </Link>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl sm:text-2xl font-semibold text-zorg-green mb-4">
+                  Zorginstellingen
+                </h3>
+                <div className="space-y-4 text-zorg-green-dark/90 leading-relaxed">
+                  <p>
+                    Ook zorginstellingen kunnen rechtstreeks contact met mij opnemen voor samenwerking. Ik ben beschikbaar voor tijdelijke inzet, ondersteuning binnen teams en begeleiding van cliënten met uiteenlopende zorgvragen.
+                  </p>
+                  <p>
+                    Mijn kracht ligt in het opbouwen van vertrouwen, het bieden van structuur en duidelijkheid en het aansluiten bij de individuele behoeften van cliënten en hun netwerk. Ik denk graag mee over passende begeleiding en het creëren van een veilige en stabiele leefomgeving.
+                  </p>
+                  <p>
+                    Heeft uw organisatie behoefte aan een betrokken en ervaren zorgprofessional, dan nodig ik u van harte uit om contact met mij op te nemen via het contactformulier op de website.
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                  >
+                    Naar contactformulier →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Expertise */}
-        <section className="py-16 sm:py-20 bg-zorg-green/5">
+        <section className="py-16 sm:py-20 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
               Expertise

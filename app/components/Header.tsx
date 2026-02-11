@@ -30,6 +30,12 @@ export default function Header() {
             Over mij
           </Link>
           <Link
+            href="/#samenwerking"
+            className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
+          >
+            Samenwerking
+          </Link>
+          <Link
             href="/contact"
             className="text-sm font-medium text-zorg-green-dark/80 hover:text-zorg-green transition-colors"
           >
