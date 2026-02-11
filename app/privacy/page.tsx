@@ -89,7 +89,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">10. Vragen?</h2>
               <p>
-                Heeft u vragen over deze privacyverklaring of over het gebruik van uw gegevens? Neem dan contact met ons op via <a href="mailto:j.smits@zorgjustintime.nl" className="text-zorg-green underline hover:text-zorg-green-dark">j.smits@zorgjustintime.nl</a> of <a href="tel:+31614840145" className="text-zorg-green underline hover:text-zorg-green-dark">bel mij</a>.
+                Heeft u vragen over deze privacyverklaring of over het gebruik van uw gegevens? Neem dan contact met ons op via <a href="mailto:j.smits@zorgjustintime.nl" className="text-zorg-green underline hover:text-zorg-green-dark">j.smits@zorgjustintime.nl</a>.
               </p>
             </section>
 

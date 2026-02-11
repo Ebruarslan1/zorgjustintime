@@ -9,9 +9,6 @@ export default function Footer() {
           <a href="mailto:j.smits@zorgjustintime.nl" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
             j.smits@zorgjustintime.nl
           </a>
-          <a href="tel:+31614840145" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
-            Bel mij
-          </a>
         </div>
         <div className="mt-6 pt-6 border-t border-white/10 text-sm text-white/60 text-center sm:text-right">
           <p>KVK 87265931 · Vestiging 000053185749</p>
