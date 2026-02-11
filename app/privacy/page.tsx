@@ -26,7 +26,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">1. Wie zijn wij?</h2>
               <p>
-                Zorg Just In Time is verantwoordelijk voor de verwerking van uw persoonsgegevens op deze website. Justin Smits voert de activiteiten uit. U kunt ons bereiken via j.smits@zorgjustintime.nl of 06 14 84 01 45. Ons adres: Almelo. KVK 87265931, vestiging 000053185749.
+                Zorg Just In Time is verantwoordelijk voor de verwerking van uw persoonsgegevens op deze website. Justin Smits voert de activiteiten uit. U kunt ons bereiken via j.smits@zorgjustintime.nl of door mij te bellen. Ons adres: Almelo. KVK 87265931, vestiging 000053185749.
               </p>
             </section>
 
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">10. Vragen?</h2>
               <p>
-                Heeft u vragen over deze privacyverklaring of over het gebruik van uw gegevens? Neem dan contact met ons op via <a href="mailto:j.smits@zorgjustintime.nl" className="text-zorg-green underline hover:text-zorg-green-dark">j.smits@zorgjustintime.nl</a> of bel 06 14 84 01 45.
+                Heeft u vragen over deze privacyverklaring of over het gebruik van uw gegevens? Neem dan contact met ons op via <a href="mailto:j.smits@zorgjustintime.nl" className="text-zorg-green underline hover:text-zorg-green-dark">j.smits@zorgjustintime.nl</a> of <a href="tel:+31614840145" className="text-zorg-green underline hover:text-zorg-green-dark">bel mij</a>.
               </p>
             </section>
 

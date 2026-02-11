@@ -10,7 +10,7 @@ export default function Footer() {
             j.smits@zorgjustintime.nl
           </a>
           <a href="tel:+31614840145" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
-            06 14 84 01 45
+            Bel mij
           </a>
         </div>
         <div className="mt-6 pt-6 border-t border-white/10 text-sm text-white/60 text-center sm:text-right">

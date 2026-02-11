@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     if (!apiKey || apiKey.trim() === '') {
       console.error('RESEND_API_KEY is niet gezet.')
       return NextResponse.json(
-        { error: 'E-mail is niet geconfigureerd. Neem contact op via het telefoonnummer of e-mail in de footer.' },
+        { error: 'E-mail is niet geconfigureerd. Neem contact op via de contactgegevens in de footer.' },
         { status: 503 }
       )
     }

@@ -63,7 +63,7 @@ export default function ContactPage() {
             </p>
             <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-4 text-sm text-zorg-green-dark/90">
               <p className="font-semibold text-zorg-green mb-2">Contactgegevens</p>
-              <p><a href="tel:+31614840145" className="hover:text-zorg-green transition-colors underline">06 14 84 01 45</a></p>
+              <p><a href="tel:+31614840145" className="hover:text-zorg-green transition-colors underline">Bel mij</a></p>
               <p className="mt-1">Almelo</p>
               <p className="mt-1 text-zorg-green-dark/70">KVK 87265931 · Vestiging 000053185749</p>
             </div>

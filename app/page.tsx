@@ -313,7 +313,7 @@ export default function Home() {
                   href="tel:+31614840145"
                   className="inline-flex items-center justify-center gap-2 bg-white text-zorg-green px-5 py-2.5 rounded-xl font-semibold hover:bg-white/90 transition-colors shadow-lg w-full sm:w-auto"
                 >
-                  Bel 06 14 84 01 45
+                  Bel mij
                 </a>
               </div>
               <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/10 border border-white/20">
