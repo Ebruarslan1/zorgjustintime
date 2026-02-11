@@ -15,9 +15,12 @@ export default function ContactPage() {
   const [bericht, setBericht] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setStatus('sending')
+    setErrorMessage(null)
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -30,13 +33,19 @@ export default function ContactPage() {
           bericht,
         }),
       })
-      if (!res.ok) throw new Error('Versturen mislukt')
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) {
+        setErrorMessage(typeof data.error === 'string' ? data.error : null)
+        setStatus('error')
+        return
+      }
       setStatus('success')
       setNaam('')
       setEmail('')
       setTelefoon('')
       setBericht('')
     } catch {
+      setErrorMessage(null)
       setStatus('error')
     }
   }
@@ -158,7 +167,7 @@ export default function ContactPage() {
               )}
               {status === 'error' && (
                 <p className="text-red-600 rounded-xl bg-red-50 p-4">
-                  Er ging iets mis bij het versturen. Probeer het later opnieuw of neem telefonisch contact op.
+                  {errorMessage || 'Er ging iets mis bij het versturen. Probeer het later opnieuw of neem telefonisch contact op.'}
                 </p>
               )}
 

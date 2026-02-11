@@ -92,7 +92,7 @@ export default function Home() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
-                Combinatieproblematiek: autisme + trauma / hechtingsproblematiek, agressieregulatie, stemmingsproblematiek
+                Combinatieproblematiek: autisme, ADHD, trauma / hechtingsproblematiek, agressieregulatie, stemmingsproblematiek
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-2 h-2 rounded-full bg-zorg-green flex-shrink-0 mt-2" aria-hidden />
