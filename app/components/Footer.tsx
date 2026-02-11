@@ -1,16 +1,8 @@
 export default function Footer() {
   return (
     <footer className="bg-zorg-green text-white mt-auto">
-      <div className="max-w-5xl mx-auto px-6 py-10">
-        <div className="text-center sm:text-left">
-          <p className="font-semibold text-white">Zorg Just In Time</p>
-          <p className="text-sm text-white/80 mt-0.5">Justin Smits – Begeleiding op maat</p>
-          <p className="text-sm text-white/70 mt-1">Almelo</p>
-          <a href="mailto:j.smits@zorgjustintime.nl" className="text-sm text-white/80 hover:text-white transition-colors mt-0.5 block">
-            j.smits@zorgjustintime.nl
-          </a>
-        </div>
-        <div className="mt-6 pt-6 border-t border-white/10 text-sm text-white/60 text-center sm:text-right">
+      <div className="max-w-5xl mx-auto px-6 py-6">
+        <div className="text-sm text-white/60 text-center sm:text-right">
           <p>KVK 87265931 · Vestiging 000053185749</p>
           <p className="mt-1">
             <a href="/privacy" className="hover:text-white transition-colors underline">Privacyverklaring</a>
