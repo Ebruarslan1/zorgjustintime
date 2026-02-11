@@ -7,7 +7,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://zorgjustintime.nl'
 export const metadata = {
   title: 'PGB-begeleiding',
   description:
-    'PGB-begeleiding voor kinderen, jongeren en volwassenen. Rust, structuur en ondersteuning op maat. Rechtstreeks of via bemiddelingsbureau. Justin Smits, Zorg Just In Time.',
+    'PGB-begeleiding voor kinderen, jongeren en volwassenen. Rust, structuur en ondersteuning op maat. Justin Smits, Zorg Just In Time.',
   alternates: { canonical: `${siteUrl}/pgb` },
 }
 
@@ -27,7 +27,7 @@ export default function PGBPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mb-3">Wat bied ik aan?</h2>
               <p>
-                Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Je kunt rechtstreeks met mij afspreken, of via een bemiddelingsbureau. Ik werk met PGB-zorg.
+                Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Je kunt rechtstreeks met mij afspreken—als cliënt of als ouder voor je kind. Ik werk met PGB-zorg.
               </p>
             </section>
 
@@ -41,8 +41,21 @@ export default function PGBPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mb-3">Werkgebied en inzet</h2>
               <p>
-                Ik werk in Overijssel en omstreken (ongeveer 80 km rond Almelo). Langdurige trajecten, PGB-zorg en samenwerking via bemiddelingsbureaus zijn mogelijk. Ik heb een AGB-code. BHV en Medicatieveiligheid zijn up-to-date.
+                Ik werk in Overijssel en omstreken (ongeveer 80 km rond Almelo). Langdurige trajecten en PGB-zorg zijn mogelijk. Ik heb een AGB-code. BHV en Medicatieveiligheid zijn up-to-date.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-zorg-green mb-3">Samenwerking</h2>
+              <p>
+                Voor bemiddelingsbureaus en zorginstellingen die met mij willen samenwerken: ik zet me in op basis van jullie vraag. Heeft uw bureau of instelling interesse in inzet of samenwerking? Neem gerust contact op.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+              >
+                Neem contact op →
+              </Link>
             </section>
 
             <section className="rounded-2xl bg-zorg-green/5 border border-zorg-green/15 p-6">

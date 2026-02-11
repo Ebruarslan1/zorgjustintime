@@ -25,21 +25,39 @@ export default function Home() {
           </div>
         </section>
 
-        {/* PGB-begeleiding */}
+        {/* PGB-begeleiding en Samenwerking */}
         <section id="pgb-begeleiding" className="py-16 sm:py-20 bg-zorg-green/5 scroll-mt-20">
           <div className="max-w-5xl mx-auto px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
-              PGB-begeleiding
-            </h2>
-            <p className="text-zorg-green-dark/90 max-w-2xl leading-relaxed mb-6">
-              Begeleiding op basis van een persoonsgebonden budget: op maat, veilig en betrouwbaar. Je kunt rechtstreeks met mij afspreken of via een bemiddelingsbureau. Voor kinderen, jongeren en volwassenen, intensief of minder intensief.
-            </p>
-            <Link
-              href="/pgb"
-              className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
-            >
-              Meer over PGB-begeleiding →
-            </Link>
+            <div className="grid sm:grid-cols-2 gap-10">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
+                  PGB-begeleiding
+                </h2>
+                <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
+                  Begeleiding op basis van een persoonsgebonden budget: cliënten of ouders (voor hun kind) kunnen rechtstreeks bij mij inkopen. Op maat, veilig en betrouwbaar. Voor kinderen, jongeren en volwassenen, intensief of minder intensief.
+                </p>
+                <Link
+                  href="/pgb"
+                  className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                >
+                  Meer over PGB-begeleiding →
+                </Link>
+              </div>
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
+                  Samenwerking
+                </h2>
+                <p className="text-zorg-green-dark/90 leading-relaxed mb-6">
+                  Voor bemiddelingsbureaus en zorginstellingen die met mij willen samenwerken: ik zet me in op basis van jullie vraag. Heeft uw bureau of instelling interesse in inzet of samenwerking? Neem gerust contact op.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-block text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
+                >
+                  Neem contact op →
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
