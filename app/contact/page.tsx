@@ -61,15 +61,32 @@ export default function ContactPage() {
             <p className="text-zorg-green-dark/80 leading-relaxed mb-6">
               Heeft u een vraag over samenwerking, een opdracht of een rol in de zorg? Stel uw vraag via het formulier. Ik neem zo snel mogelijk contact met u op. Geen vraag is te klein.
             </p>
-            <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-4 text-sm text-zorg-green-dark/90">
-              <p className="font-semibold text-zorg-green mb-2">Contactgegevens</p>
-              <p><a href="tel:+31614840145" className="hover:text-zorg-green transition-colors underline">Bel mij</a></p>
-              <p className="mt-1">Almelo</p>
-              <p className="mt-1 text-zorg-green-dark/70">KVK 87265931 · Vestiging 000053185749</p>
-            </div>
           </div>
 
           <div className="rounded-2xl border border-zorg-green/20 bg-white shadow-lg p-6 sm:p-8">
+            <div className="mb-6 grid sm:grid-cols-2 gap-4 text-sm">
+              <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-3">
+                <p className="font-semibold text-zorg-green mb-1">Telefonisch contact</p>
+                <a
+                  href="tel:+31614840145"
+                  className="inline-flex items-center justify-center px-3 py-2 rounded-lg bg-zorg-green text-white font-semibold text-sm hover:bg-zorg-green-dark transition-colors w-full sm:w-auto"
+                >
+                  Bel mij
+                </a>
+              </div>
+              <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-3">
+                <p className="font-semibold text-zorg-green mb-1">Stuur meteen een WhatsApp</p>
+                <a
+                  href="https://wa.me/31614840145"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-3 py-2 rounded-lg bg-zorg-green text-white font-semibold text-sm hover:bg-zorg-green-dark transition-colors w-full sm:w-auto"
+                >
+                  Open WhatsApp
+                </a>
+              </div>
+            </div>
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-semibold text-zorg-green mb-3">
