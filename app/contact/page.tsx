@@ -5,10 +5,10 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-type Aanleiding = 'zorgvrager' | 'zorgbemiddelaar'
+type Aanleiding = 'pgb-budgethouder' | 'zorgbemiddelaar' | 'zorginstelling'
 
 export default function ContactPage() {
-  const [aanleiding, setAanleiding] = useState<Aanleiding>('zorgvrager')
+  const [aanleiding, setAanleiding] = useState<Aanleiding>('pgb-budgethouder')
   const [naam, setNaam] = useState('')
   const [email, setEmail] = useState('')
   const [telefoon, setTelefoon] = useState('')
@@ -64,8 +64,8 @@ export default function ContactPage() {
           </div>
 
           <div className="rounded-2xl border border-zorg-green/20 bg-white shadow-lg p-6 sm:p-8">
-            <div className="mb-6 grid sm:grid-cols-2 gap-4 text-sm">
-              <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-3">
+            <div className="mb-6 grid sm:grid-cols-2 gap-4 text-sm text-center">
+              <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-3 flex flex-col items-center justify-center">
                 <p className="font-semibold text-zorg-green mb-1">Telefonisch contact</p>
                 <a
                   href="tel:+31614840145"
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   Bel mij
                 </a>
               </div>
-              <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-3">
+              <div className="rounded-xl bg-zorg-green/5 border border-zorg-green/15 p-3 flex flex-col items-center justify-center">
                 <p className="font-semibold text-zorg-green mb-1">Stuur meteen een WhatsApp</p>
                 <a
                   href="https://wa.me/31614840145"
@@ -92,17 +92,17 @@ export default function ContactPage() {
                 <label className="block text-sm font-semibold text-zorg-green mb-3">
                   Ik neem contact op als
                 </label>
-                <div className="flex gap-6">
+                <div className="flex flex-wrap gap-6">
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
                       type="radio"
                       name="aanleiding"
-                      value="zorgvrager"
-                      checked={aanleiding === 'zorgvrager'}
-                      onChange={() => setAanleiding('zorgvrager')}
+                      value="pgb-budgethouder"
+                      checked={aanleiding === 'pgb-budgethouder'}
+                      onChange={() => setAanleiding('pgb-budgethouder')}
                       className="w-4 h-4 text-zorg-green focus:ring-zorg-green border-zorg-green/30"
                     />
-                    <span className="text-zorg-green-dark">Zorgvrager</span>
+                    <span className="text-zorg-green-dark">PGB-budgethouder</span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
@@ -114,6 +114,17 @@ export default function ContactPage() {
                       className="w-4 h-4 text-zorg-green focus:ring-zorg-green border-zorg-green/30"
                     />
                     <span className="text-zorg-green-dark">Zorgbemiddelaar</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="aanleiding"
+                      value="zorginstelling"
+                      checked={aanleiding === 'zorginstelling'}
+                      onChange={() => setAanleiding('zorginstelling')}
+                      className="w-4 h-4 text-zorg-green focus:ring-zorg-green border-zorg-green/30"
+                    />
+                    <span className="text-zorg-green-dark">Zorginstelling</span>
                   </label>
                 </div>
               </div>

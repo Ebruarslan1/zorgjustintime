@@ -26,7 +26,12 @@ export async function POST(request: NextRequest) {
     }
 
     const resend = new Resend(apiKey)
-    const aanleidingTekst = aanleiding === 'zorgbemiddelaar' ? 'Zorgbemiddelaar' : 'Zorgvrager'
+    const aanleidingLabels: Record<string, string> = {
+      'pgb-budgethouder': 'PGB-budgethouder',
+      'zorgbemiddelaar': 'Zorgbemiddelaar',
+      'zorginstelling': 'Zorginstelling',
+    }
+    const aanleidingTekst = aanleidingLabels[String(aanleiding)] || 'Onbekend'
     const telefoonTekst = telefoon?.trim() ? telefoon : 'Niet opgegeven'
 
     const result = await resend.emails.send({

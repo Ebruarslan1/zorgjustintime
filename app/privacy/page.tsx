@@ -33,7 +33,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-zorg-green mt-8 mb-3">2. Welke gegevens verwerken wij?</h2>
               <p>
-                Wij verwerken alleen persoonsgegevens die u zelf aan ons verstrekt, bijvoorbeeld via het contactformulier. Dat kunnen zijn: uw naam, e-mailadres, telefoonnummer, het onderwerp van uw bericht (zorgvrager of zorgbemiddelaar) en de inhoud van uw bericht.
+                Wij verwerken alleen persoonsgegevens die u zelf aan ons verstrekt, bijvoorbeeld via het contactformulier. Dat kunnen zijn: uw naam, e-mailadres, telefoonnummer, het onderwerp van uw bericht (PGB-budgethouder, zorgbemiddelaar of zorginstelling) en de inhoud van uw bericht.
               </p>
             </section>
 
