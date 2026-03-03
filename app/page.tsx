@@ -93,8 +93,8 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-4">
               PGB-begeleiding
             </h2>
-            <p className="text-zorg-green-dark/90 max-w-2xl text-lg leading-relaxed mb-10">
-              Begeleiding op basis van een persoonsgebonden budget (PGB): op maat, veilig en betrouwbaar. Voor kinderen, jongeren en volwassenen, complex of minder complex.
+            <p className="text-zorg-green-dark/90 text-lg leading-relaxed mb-10">
+              Met PGB-begeleiding sluiten we zo goed mogelijk aan bij het dagelijks leven van jou of je kind. Samen kijken we welke doelen er zijn, hoeveel ondersteuning nodig is en op welke momenten begeleiding het meest helpend is—in de thuissituatie, op school of binnen een woonvoorziening.
             </p>
 
             <div className="space-y-8 text-zorg-green-dark/90 leading-relaxed">
@@ -217,7 +217,7 @@ export default function Home() {
         </section>
 
         {/* Mijn manier van werken */}
-        <section className="py-16 sm:py-20 bg-white">
+        <section className="py-16 sm:py-20 bg-zorg-green/5">
           <div className="max-w-5xl mx-auto px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
               Mijn manier van werken
@@ -244,7 +244,7 @@ export default function Home() {
         </section>
 
         {/* Praktische informatie */}
-        <section className="py-16 sm:py-20 bg-zorg-green/5">
+        <section className="py-16 sm:py-20 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
               Praktische informatie
