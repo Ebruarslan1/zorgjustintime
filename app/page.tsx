@@ -46,12 +46,6 @@ export default function Home() {
                 <p className="text-zorg-green-dark/90 leading-relaxed">
                   Mijn naam is <strong className="text-zorg-green">Justin</strong>, zelfstandig zorgprofessional in Overijssel (woonachtig in Almelo). Ik begeleid kinderen, jongeren, jongvolwassenen én volwassenen, zowel individueel als in samenwerking met ouders, instellingen en bemiddelingsbureaus. Ik heb ervaring met zowel complexe zorgvragen (autisme, trauma, hechtingsproblematiek, suïcidaliteit, psychische ontregeling) als minder intensieve begeleiding. Mijn manier van werken is duidelijk, rustig en betrokken, met oog voor veiligheid en continuïteit.
                 </p>
-                <Link
-                  href="/contact"
-                  className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
-                >
-                  Neem contact met mij op →
-                </Link>
               </div>
             </div>
           </div>
@@ -160,12 +154,6 @@ export default function Home() {
                   <p>
                     Bent u als bemiddelingsbureau op zoek naar een zelfstandige en ervaren zorgprofessional, dan kom ik graag in contact om de mogelijkheden te bespreken.
                   </p>
-                  <Link
-                    href="/contact"
-                    className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
-                  >
-                    Neem contact op →
-                  </Link>
                 </div>
               </div>
 
@@ -183,12 +171,6 @@ export default function Home() {
                   <p>
                     Heeft uw organisatie behoefte aan een betrokken en ervaren zorgprofessional, dan nodig ik u van harte uit om contact met mij op te nemen via het contactformulier op de website.
                   </p>
-                  <Link
-                    href="/contact"
-                    className="inline-block mt-2 text-zorg-green font-semibold hover:text-zorg-green-dark transition-colors"
-                  >
-                    Naar contactformulier →
-                  </Link>
                 </div>
               </div>
             </div>
