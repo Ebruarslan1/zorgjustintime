@@ -281,7 +281,7 @@ export default function Home() {
               Wat anderen over mij zeggen
             </h2>
             <p className="text-zorg-green-dark/80 mb-6">
-              Hieronder enkele ervaringen van ouders, cliënten en samenwerkingspartners. Dit zijn voorbeelden; op termijn kunnen hier Google reviews worden getoond.
+              Hieronder enkele ervaringen van ouders, cliënten en samenwerkingspartners.
             </p>
             <div className="flex gap-4 overflow-x-auto pb-2 -mx-6 px-6 sm:mx-0 sm:px-0 scroll-smooth snap-x snap-mandatory">
               <article className="min-w-[80%] sm:min-w-0 sm:flex-1 snap-center rounded-2xl bg-white shadow-sm border border-zorg-green/10 p-5">
@@ -304,7 +304,7 @@ export default function Home() {
               </article>
             </div>
             <p className="mt-4 text-xs text-zorg-green-dark/70">
-              Bron: ervaringen uit de praktijk. Google reviews kunnen hier later worden gekoppeld.
+              Bron: Google reviews.
             </p>
           </div>
         </section>
