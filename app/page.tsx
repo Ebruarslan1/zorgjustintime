@@ -94,14 +94,14 @@ export default function Home() {
               PGB-begeleiding
             </h2>
             <p className="text-zorg-green-dark/90 text-lg leading-relaxed mb-10">
-              Met PGB-begeleiding sluiten we zo goed mogelijk aan bij het dagelijks leven van jou of je kind. Samen kijken we welke doelen er zijn, hoeveel ondersteuning nodig is en op welke momenten begeleiding het meest helpend is—in de thuissituatie, op school of binnen een woonvoorziening.
+              Met PGB-begeleiding sluiten we zo goed mogelijk aan bij het dagelijks leven van jou of je kind. Samen kijken we welke doelen er zijn, hoeveel ondersteuning nodig is en op welke momenten begeleiding het meest helpend is in de thuissituatie, op school of binnen een woonvoorziening.
             </p>
 
             <div className="space-y-8 text-zorg-green-dark/90 leading-relaxed">
               <div>
                 <h3 className="text-xl font-semibold text-zorg-green mb-3">Wat bied ik aan?</h3>
                 <p>
-                  Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Je kunt rechtstreeks met mij afspreken—als cliënt of als ouder voor je kind. Ik werk met PGB-zorg.
+                  Eén-op-één begeleiding en langdurige trajecten, afgestemd op wat haalbaar en helpend is voor jouw kind of cliënt. Ook groepsbegeleiding en inzet in woonvoorzieningen behoren tot de mogelijkheden. Je kunt rechtstreeks met mij afspreken als cliënt of als ouder voor je kind. Ik werk met PGB-zorg.
                 </p>
               </div>
               <div>
