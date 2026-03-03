@@ -274,6 +274,41 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Reviews / Google reviews slider */}
+        <section className="py-16 sm:py-20 bg-zorg-green/5">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-zorg-green mb-6">
+              Wat anderen over mij zeggen
+            </h2>
+            <p className="text-zorg-green-dark/80 mb-6">
+              Hieronder enkele ervaringen van ouders, cliënten en samenwerkingspartners. Dit zijn voorbeelden; op termijn kunnen hier Google reviews worden getoond.
+            </p>
+            <div className="flex gap-4 overflow-x-auto pb-2 -mx-6 px-6 sm:mx-0 sm:px-0 scroll-smooth snap-x snap-mandatory">
+              <article className="min-w-[80%] sm:min-w-0 sm:flex-1 snap-center rounded-2xl bg-white shadow-sm border border-zorg-green/10 p-5">
+                <p className="text-sm text-zorg-green-dark/90 leading-relaxed">
+                  &ldquo;Justin brengt rust in onze thuissituatie. Hij sluit goed aan bij ons kind en denkt echt mee over wat haalbaar is voor ons als gezin.&rdquo;
+                </p>
+                <p className="mt-3 text-xs text-zorg-green-dark/70 font-medium">Ouder van kind met PGB</p>
+              </article>
+              <article className="min-w-[80%] sm:min-w-0 sm:flex-1 snap-center rounded-2xl bg-white shadow-sm border border-zorg-green/10 p-5">
+                <p className="text-sm text-zorg-green-dark/90 leading-relaxed">
+                  &ldquo;Betrouwbaar, duidelijk en betrokken. In de samenwerking is Justin professioneel en denkt hij constructief mee met het team.&rdquo;
+                </p>
+                <p className="mt-3 text-xs text-zorg-green-dark/70 font-medium">Zorginstelling</p>
+              </article>
+              <article className="min-w-[80%] sm:min-w-0 sm:flex-1 snap-center rounded-2xl bg-white shadow-sm border border-zorg-green/10 p-5">
+                <p className="text-sm text-zorg-green-dark/90 leading-relaxed">
+                  &ldquo;Communicatie is helder en afspraken worden nagekomen. Fijne samenwerking, ook in complexe trajecten.&rdquo;
+                </p>
+                <p className="mt-3 text-xs text-zorg-green-dark/70 font-medium">Bemiddelingsbureau</p>
+              </article>
+            </div>
+            <p className="mt-4 text-xs text-zorg-green-dark/70">
+              Bron: ervaringen uit de praktijk. Google reviews kunnen hier later worden gekoppeld.
+            </p>
+          </div>
+        </section>
+
         {/* Contact sectie */}
         <section id="contact" className="py-16 sm:py-20 bg-zorg-green text-white scroll-mt-20">
           <div className="max-w-5xl mx-auto px-6">
